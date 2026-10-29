@@ -4,8 +4,8 @@ string palabras[] = {"rossa", "jetty", "wizzo", "cuppa", "cohoe", "gurks", "squa
 int main() {
     int a = 0, b = 0, c = 0, d = 0, e = 0, f = 0, g = 0, h = 0, i = 0, j = 0, k = 0, l = 0, m = 0, n = 0, o = 0, p = 0, q = 0, r = 0, s = 0, t = 0, u = 0, v = 0, w = 0, x = 0, y = 0, z = 0;
 
-    for (int i = 0; i < 14855; i++) {
-        string palabra = palabras[i];
+    for (int iv = 0; iv < 14855; iv++) {
+        string palabra = palabras[iv];
         char c1 = palabra[0];
         char c2 = palabra[1];
         char c3 = palabra[2];
@@ -91,11 +91,11 @@ int main() {
         }
     }
     int frecuencias[] = {a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z};
-    for (int i = 25; i >= 0; i--) {
+    for (int iv = 25; iv >= 0; iv--) {
         for (int j = 25; j >= 0; j--) {
-            if (frecuencias[j] > frecuencias[i]) {
-                int aux = frecuencias[i];
-                frecuencias[i] = frecuencias[j];
+            if (frecuencias[j] > frecuencias[iv]) {
+                int aux = frecuencias[iv];
+                frecuencias[iv] = frecuencias[j];
                 frecuencias[j] = aux;
             }
         }
